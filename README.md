@@ -13,6 +13,8 @@ Pre-requisites
 
 1. Latest version of JDK should be installed in your computer.
      - if not done please go through the link: https://docs.oracle.com/en/java/javase/13/install/installation-jdk-microsoft-windows-platforms.html#GUID-A7E27B90-A28D-4237-9383-A58B416071CA
+     - NOTE: JDK 19 should be installed, as shown in the below image. Please update if you are using older version, you might see issues while running the tests.
+	![image](https://user-images.githubusercontent.com/45257587/228029799-47dbc823-0022-4b66-b454-c526b64fbf28.png)
 
 2. clone the github code to your local repository using below clone url:
      - Clone URL : 
