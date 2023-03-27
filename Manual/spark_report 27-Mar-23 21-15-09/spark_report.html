@@ -1,0 +1,1452 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>McPizza ChatBot</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">McPizza Ordering Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 27, 2023 21:15:09</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@OrderNonVegPizza</a><a class="dropdown-item" href="#">@OrderVegPizza</a><a class="dropdown-item" href="#">@Login</a><a class="dropdown-item" href="#">@OrderNonVegPizza_ThumbsDownFeedback</a><a class="dropdown-item" href="#">@OrderVegPizza_ThumbsUpFeedback</a><a class="dropdown-item" href="#">@OrderNonVegPizza_NoQuickReplies</a><a class="dropdown-item" href="#">@OrderVegPizza_QuickReplies</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login McPizza agent chatbot</p>
+            <p class="text-sm">
+              <span>9:15:09 PM</span> / <span>00:01:10:217</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login McPizza agent chatbot</h5>
+<span class='badge badge-success'>03.27.2023 9:15:09 PM</span>
+<span class='badge badge-danger'>03.27.2023 9:16:20 PM</span>
+<span class='badge badge-default'>00:01:10:217</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> McPizza is one of the AI Agent developed on Avaamo platform for testing and assignment purpose.
+This feature enables login facility to McPizza agent chatbot with basic details like name and email address for ordering pizza's.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Validate login functionality of McPizza agent chatbot</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Validate login functionality of McPizza agent chatbot</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website for a given browser</span>
+      <div><table class='markup-table table '><tr><td>browserType</td></tr><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould land on welcome page with welcome message <'Welcome to McPizza Booking Journey'></span>
+      <div>Welcome to McPizza Booking Journey
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Validate login functionality of McPizza agent chatbot</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website for a given browser</span>
+      <div><table class='markup-table table '><tr><td>browserType</td></tr><tr><td>firefox</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould land on welcome page with welcome message <'Welcome to McPizza Booking Journey'></span>
+      <div>Welcome to McPizza Booking Journey
+      </div>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Order different types of non-veg pizzas through McPizza agent chatbot</p>
+            <p class="text-sm">
+              <span>9:16:20 PM</span> / <span>00:01:09:961</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Order different types of non-veg pizzas through McPizza agent chatbot</h5>
+<span class='badge badge-success'>03.27.2023 9:16:20 PM</span>
+<span class='badge badge-danger'>03.27.2023 9:17:30 PM</span>
+<span class='badge badge-default'>00:01:09:961</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> McPizza is one of the AI Agent developed on Avaamo platform for testing and assignment purpose.
+This feature enables different types of non-veg pizza ordering facility using McPizza agent chatbot with basic details like name and email address.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould land on welcome page with welcome message <'Welcome to McPizza Booking Journey'></span>
+      <div>Welcome to McPizza Booking Journey
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given I enter a message and click on send</span>
+      <div><table class='markup-table table '><tr><td>question</td></tr><tr><td>I want to order pizza</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see selections for veg and non-veg pizza</span>
+      <div>We have a wide variety of freshly backed pizza . What would you like to Order ?
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I enter a message and click on send</span>
+      <div><table class='markup-table table '><tr><td>pizzaType</td></tr><tr><td>non-veg</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter a message and click on send</span>
+      <div><table class='markup-table table '><tr><td>toppings</td></tr><tr><td>Pepperoni</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter a message and click on send</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Thick Crust</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter a message and click on send</span>
+      <div><table class='markup-table table '><tr><td>size</td></tr><tr><td>Large</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see the order details are matching with selections</span>
+      <div><table class='markup-table table '><tr><td>pizzaDetails</td></tr><tr><td>non-veg</td></tr><tr><td>Pepperoni</td></tr><tr><td>Thick Crust</td></tr><tr><td>Large</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I confirm the order details as <'Yes'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see the order getting created successfully <'CONGRATS ! ORDER PLACED .'></span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>Order different types of non-veg pizza and provide thumbs down feedback</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="55"><span class="badge log pass-bg mr-2">Pass</span>Order different types of non-veg pizza and provide thumbs down feedback</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould land on welcome page with welcome message <'Welcome to McPizza Booking Journey'></span>
+      <div>Welcome to McPizza Booking Journey
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given I ask a question <'I want to order pizza'> to the chat bot</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see selections for veg and non-veg pizza</span>
+      <div>We have a wide variety of freshly backed pizza . What would you like to Order ?
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I choose pizza type</span>
+      <div><table class='markup-table table '><tr><td>pizzaType</td></tr><tr><td>non-veg</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza toppings as</span>
+      <div><table class='markup-table table '><tr><td>toppings</td></tr><tr><td>Pepperoni</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza base as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Thick Crust</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza size as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Medium</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I confirm the order details as <'Yes'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on thumbs down feedback button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I enter feedback improvement message <'Needs improvemet over taste'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould see <'Thank You for Your Valuable Feedback'> feedback message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="90"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Order different types of veg pizzas through McPizza agent chatbot</p>
+            <p class="text-sm">
+              <span>9:17:30 PM</span> / <span>00:06:36:136</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Order different types of veg pizzas through McPizza agent chatbot</h5>
+<span class='badge badge-success'>03.27.2023 9:17:30 PM</span>
+<span class='badge badge-danger'>03.27.2023 9:24:06 PM</span>
+<span class='badge badge-default'>00:06:36:136</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=90</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"> McPizza is one of the AI Agent developed on Avaamo platform for testing and assignment purpose.
+This feature enables different types of non-veg pizza ordering facility using McPizza agent chatbot with basic details like name and email address.</div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="91"><span class="badge log fail-bg mr-2">Fail</span>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="92"><span class="badge log fail-bg mr-2">Fail</span>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website for a given browser</span>
+      <div><table class='markup-table table '><tr><td>browserType</td></tr><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I ask a question <'I want to order pizza'> to the chat bot</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see selections for veg and non-veg pizza</span>
+      <div>We have a wide variety of freshly backed pizza . What would you like to Order ?
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I choose pizza type</span>
+      <div><table class='markup-table table '><tr><td>pizzaType</td></tr><tr><td>veg</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza toppings as</span>
+      <div><table class='markup-table table '><tr><td>toppings</td></tr><tr><td>Cheese</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And I choose pizza base as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Thin Crust</td></tr></table>
+      </div>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Thin Crust']"}
+  (Session info: chrome=111.0.5563.111)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b8c95e9a8fee793e45aac0cc3e3829b9, findElement {using=xpath, value=//a[@title='Thin Crust']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.111, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\VIKAS_~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62165/devtoo..., se:cdpVersion: 111.0.5563.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b8c95e9a8fee793e45aac0cc3e3829b9
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at pages.McPizzaOrderPizzaPage.PizzaBase(McPizzaOrderPizzaPage.java:84)
+	at pages.McPizzaOrderPizzaPage.SelectPizzaBase(McPizzaOrderPizzaPage.java:149)
+	at stepdefinitions.PizzaOrderingSteps.i_choose_pizza_base_as(PizzaOrderingSteps.java:75)
+	at ✽.I choose pizza base as(file:///C:/Cucumbr_BDD_McPizzaAgent/src/test/resources/features/McPizza_Chatbot_Veg_Pizza_Orders.feature:61)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepdefinitions.Hooks.AfterEveryStep(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded1.png' src="./screenshots/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I choose pizza size as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Small</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I should see the order details are matching with selections</span>
+      <div><table class='markup-table table '><tr><td>pizzaDetails</td></tr><tr><td>veg</td></tr><tr><td>Cheese</td></tr><tr><td>Thin Crust</td></tr><tr><td>Small</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I confirm the order details as <'Yes'></span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I should see the order getting created successfully <'CONGRATS ! ORDER PLACED .'></span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="120"><span class="badge log fail-bg mr-2">Fail</span>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website for a given browser</span>
+      <div><table class='markup-table table '><tr><td>browserType</td></tr><tr><td>firefox</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I ask a question <'I want to order pizza'> to the chat bot</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>Then I should see selections for veg and non-veg pizza</span>
+      <div>Expected condition failed: waiting for visibility of all [] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.8.1', revision: '8ebccac989'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:debuggerAddress: 127.0.0.1:13846, moz:geckodriverVersion: 0.32.2, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24460, moz:profile: C:\Users\VIKAS_~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:13846/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: eabe39a9-a017-49a1-a575-acdba34990dc
+      </div>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.PizzaOrderingSteps.i_should_see_selections_for_veg_and_non_veg_pizza(PizzaOrderingSteps.java:54)
+	at ✽.I should see selections for veg and non-veg pizza(file:///C:/Cucumbr_BDD_McPizzaAgent/src/test/resources/features/McPizza_Chatbot_Veg_Pizza_Orders.feature:53)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>stepdefinitions.Hooks.AfterEveryStep(io.cucumber.java.Scenario)</span>
+      <div>
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='./screenshots/embedded2.png' src="./screenshots/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When I choose pizza type</span>
+      <div><table class='markup-table table '><tr><td>pizzaType</td></tr><tr><td>veg</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I choose pizza toppings as</span>
+      <div><table class='markup-table table '><tr><td>toppings</td></tr><tr><td>Cheese</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I click on submit</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I choose pizza base as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Thin Crust</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I choose pizza size as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Large</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I should see the order details are matching with selections</span>
+      <div><table class='markup-table table '><tr><td>pizzaDetails</td></tr><tr><td>veg</td></tr><tr><td>Cheese</td></tr><tr><td>Thin Crust</td></tr><tr><td>Large</td></tr></table>
+      </div>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And I confirm the order details as <'Yes'></span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then I should see the order getting created successfully <'CONGRATS ! ORDER PLACED .'></span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>Order different types of veg pizza and provide thumbs up feedback</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="149"><span class="badge log pass-bg mr-2">Pass</span>Order different types of veg pizza and provide thumbs up feedback</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Navigating to Avaamo chatbot website for a given browser</span>
+      <div><table class='markup-table table '><tr><td>browserType</td></tr><tr><td>chrome</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on McPizza agent chatbot and start the chat</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I login to McPizza agent with <'Test User'> and <'test@mcpizza.com'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I ask a question <'I want to order pizza'> to the chat bot</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I should see selections for veg and non-veg pizza</span>
+      <div>We have a wide variety of freshly backed pizza . What would you like to Order ?
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When I choose pizza type</span>
+      <div><table class='markup-table table '><tr><td>pizzaType</td></tr><tr><td>veg</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza toppings as</span>
+      <div><table class='markup-table table '><tr><td>toppings</td></tr><tr><td>tomato</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza base as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Thick Crust</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I choose pizza size as</span>
+      <div><table class='markup-table table '><tr><td>base</td></tr><tr><td>Medium</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I confirm the order details as <'Yes'></span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on thumbs up feedback button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I select the feedback type</span>
+      <div><table class='markup-table table '><tr><td>feedback</td></tr><tr><td>Good</td></tr></table>
+      </div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And I click on submit</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then I sould see <'Thank You for Your Support'> feedback message</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:20:14 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='129'>Then I should see selections for veg and non-veg pizza</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot.Then I should see selections for veg and non-veg pizza</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:18:51 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='109'>And I choose pizza base as</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot.And I choose pizza base as</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@OrderNonVegPizza</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderNonVegPizza</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='25'>Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of non-veg pizzas through McPizza agent chatbot.Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:16:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='55'>Order different types of non-veg pizza and provide thumbs down feedback</a>
+<div class="">
+<span class="badge badge-default">Order different types of non-veg pizzas through McPizza agent chatbot.Order different types of non-veg pizza and provide thumbs down feedback</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@OrderVegPizza</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderVegPizza</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:17:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='92'>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:19:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='120'>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:23:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='149'>Order different types of veg pizza and provide thumbs up feedback</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and provide thumbs up feedback</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Login</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Login</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:15:09 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>Validate login functionality of McPizza agent chatbot</a>
+<div class="">
+<span class="badge badge-default">Login McPizza agent chatbot.Validate login functionality of McPizza agent chatbot</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:15:37 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Validate login functionality of McPizza agent chatbot</a>
+<div class="">
+<span class="badge badge-default">Login McPizza agent chatbot.Validate login functionality of McPizza agent chatbot</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@OrderNonVegPizza_ThumbsDownFeedback</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderNonVegPizza_ThumbsDownFeedback</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:16:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='55'>Order different types of non-veg pizza and provide thumbs down feedback</a>
+<div class="">
+<span class="badge badge-default">Order different types of non-veg pizzas through McPizza agent chatbot.Order different types of non-veg pizza and provide thumbs down feedback</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@OrderVegPizza_ThumbsUpFeedback</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderVegPizza_ThumbsUpFeedback</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:23:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='149'>Order different types of veg pizza and provide thumbs up feedback</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and provide thumbs up feedback</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@OrderNonVegPizza_NoQuickReplies</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderNonVegPizza_NoQuickReplies</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>21:16:20 PM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='25'>Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of non-veg pizzas through McPizza agent chatbot.Order different types of non-veg pizza and validate the order creation without using quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>2</span>
+</span>
+<p class="name">@OrderVegPizza_QuickReplies</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@OrderVegPizza_QuickReplies</h4>
+<span status="fail" class='badge log badge-danger'>2 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:17:30 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='92'>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:19:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='90' id='120'>Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</a>
+<div class="">
+<span class="badge badge-default">Order different types of veg pizzas through McPizza agent chatbot.Order different types of veg pizza and validate the order creation using the quick replies in the chatbot</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 27, 2023 21:15:09</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 27, 2023 21:24:06</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>2</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='66%'>
+<b>2</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='33%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='71%'><b>5</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='28%'><b>2</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='82%'><b>66</b> steps passed</small></div>
+<div>
+<small data-tooltip='2%'><b>2</b> steps failed,
+<b>12</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Login McPizza agent chatbot":70.217,"Order different types of non-veg pizzas through McPizza agent chatbot":69.961,"Order different types of veg pizzas through McPizza agent chatbot":396.136
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@OrderNonVegPizza</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderVegPizza</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>33.333%</td>
+</tr>
+<tr>
+<td>@Login</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderNonVegPizza_ThumbsDownFeedback</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderVegPizza_ThumbsUpFeedback</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderNonVegPizza_NoQuickReplies</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@OrderVegPizza_QuickReplies</td>
+<td>0</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 2,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 5,
+failChild: 2,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 66,
+failGrandChild: 2,
+warningGrandChild: 0,
+skipGrandChild: 12,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
