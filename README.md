@@ -78,6 +78,8 @@ Interesting points:
 - Cross browser testing is enabled so tests will run on multiple browsers.
 - Automation report has screenshots attached for failed steps. However, if required screenshots can be enabled after every step irrespective of the execution status(Pass/Fail)
 - With Junit 5 and cucumber parallel execution of tests can also be achived. Parallel execution would reduce the execution time to a greater extent.
+- Other java code editors like, intelliJ, Vsual Studio Code can also be used to run this code.
+- This Automation can also be itegrated with CI/CD tools like, Jenkins, Gitlab, AzureDevops etc,,..
 
 
   
