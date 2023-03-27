@@ -17,7 +17,7 @@ Pre-requisites
 	![image](https://user-images.githubusercontent.com/45257587/228029799-47dbc823-0022-4b66-b454-c526b64fbf28.png)
 
 2. clone the github code to your local repository using below clone url:
-     - Clone URL : 
+     - Clone URL : https://github.com/VikasBallal/McPizza_Chatbot.git
      - Follow the steps in thie link to clone a git repository using Git Bash: https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository?platform=windows
 
 There are two ways one can execute this automation, please make your choice:
