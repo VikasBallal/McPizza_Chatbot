@@ -4,7 +4,6 @@ This file explaines about how to execute automation and folder contents of manua
 
 Manual_Testing Folder Contains
   - A file with functional test cases of McPizza Chatbot(McPizza_Chatbot_Functinal_Tests.feature)
-  - A file with Non functional test cases of McPizza Chatbot(McPizza_Chatbot_NonFunctinal_Tests.feature)
   - A file with Blockers/issues in the McPizza Chatbot application
   - Before jumping into running the automation tests, please go through the McPizza_Automation_Structure_Diagram.pdf, for quick understand of automation framework 
   
