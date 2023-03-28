@@ -226,11 +226,11 @@ Scenario: Login to the McPizza chatbot and ask smaltalk questions and validate t
   Then I should see the chatbot giving the <'answer'> related to the question asked
   Examples:
     |question|answer|
-    |how old are you?|I do not know|
-    |Where did you come from?|I do not know|
-    |Where did you get your name?|I do not know|
-    |Are you a robot?I do not know|
-    |where do you live?I do not know|
+    |how old are you?|I don't know. My maker hasn't told me.|
+    |Where did you come from?|I was developed in Silicon Valley but now I roam the internet unless I'm being summoned.|
+    |Where did you get your name?|I am sorry. I don't have an answer for that.|
+    |Are you a robot?|Yes I am! Did I have you fooled?|
+    |where do you live?|I live in cyberspace, for now.|
 
 Scenario: Login to the McPizza chatbot and ask few meaning less questions and validate the answers
   Given Navigating to Avaamo Ai Agent website using the Url <'Url'>
@@ -241,6 +241,6 @@ Scenario: Login to the McPizza chatbot and ask few meaning less questions and va
   Then I should see the chatbot giving the <'answer'> related to the question asked
   Examples:
     |question|answer|
-    |how far is the earth from sky?|I do not know|
-    |Do you speak local language?|I do not know|
+    |how far is the earth from sky?|I am sorry. I don't have an answer for that.|
+    |Do you speak local language?|It should give me options to chat with a live agent and No, that's not it cancellation|
 
